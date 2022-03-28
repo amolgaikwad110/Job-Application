@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="job-application">
+        <div class="job-application-header">
+            <h1>Job Application <span>(Web)</span></h1>
+        </div>
+        <div class="job-application-form">
+            <div class="job-application-form-row">
+                <div class="job-application-form-col job-application-form-col-2">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name">
+                </div>
+                <div class="job-application-form-col job-application-form-col-2">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name">
+                </div>
+            </div>
+            <div class="job-application-form-row">
+                <div class="job-application-form-col job-application-form-col-2">
+                    <label for="email">Email</label>
+                    <input type="text" id="Email">
+                </div>
+                <div class="job-application-form-col job-application-form-col-2">
+                    <label for="role">Role</label>
+                    <select name="role" id="role">
+                        <option value="">Select Role</option>
+                        <option value="java">JAVA</option>
+                        <option value="ui">UI</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+            <div class="job-application-form-row">
+                <div class="job-application-form-col job-application-form-col-1">
+                    <label for="address">Address</label>
+                    <textarea id="address" rows="5"></textarea>
+                </div>
+            </div>
+            <div class="job-application-form-row">
+                <div class="job-application-form-col job-application-form-col-2">
+                    <label for="city">City</label>
+                    <input type="text" id="city">
+                </div>
+                <div class="job-application-form-col job-application-form-col-2">
+                    <label for="pincode">Pincode</label>
+                    <input type="number" id="pincode">
+                </div>
+            </div>
+            <div class="job-application-form-row">
+                <div class="job-application-form-col job-application-form-col-2">
+                    <label for="start-date">Start Date</label>
+                    <input type="date" id="start-date">
+                </div>
+                <div class="job-application-form-col job-application-form-col-2">
+                    <label for="upload-cv">Uplodad CV</label>
+                    <input type="file" id="upload-cv">
+                </div>
+            </div>
+        </div>
+        <div class="job-application-footer">
+            <button type="button">Apply Now</button>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.job-application {
+    width: 900px;
+    max-width: 900px;
+    background-color: white;
+    border-radius: 12px;
+    padding: 40px;
+
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.job-application-header h1 {
+    font-size: 57px;
+}
+
+.job-application-header h1 span{
+    font-size: 36px;
+    color: rgb(48, 48, 243);
+}
+
+.job-application-form {
+    margin: 25px 0;
+}
+
+.job-application-form-row {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+
+.job-application-form-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.job-application-form-col input, .job-application-form-col textarea, .job-application-form-col select { 
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid black;
+}
+
+.job-application-form-col label {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.job-application-form-col-2 {
+   flex: 0 0 calc(50% - 25px);
+}
+
+.job-application-form-col-1 {
+    flex: 0 0 100%;
+ }
+
+.job-application-footer {
+    text-align: right;
+}
+
+.job-application-footer button {
+    background-color: #FF0000;
+    color: white;
+    font-size: 28px;
+    padding: 8px 12px;
+    border: none;
+}
+
+
+@media screen and (max-width: 992px) {
+    body {
+        justify-content: flex-start;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .job-application {
+        padding: 15px;
+        width: 100%;
+    }
+    
+    .job-application-header h1 {
+        font-size: 30px;
+    }
+
+    .job-application-header h1 span {
+        font-size: 24px;
+    }
+    
+    .job-application-form-row {
+        flex-direction: column;
+        margin-bottom: 0;
+        gap: 0;
+    }
+
+    .job-application-form-col {
+        margin-bottom: 15px;
+    }
+
+    .job-application-form-col-2 {
+        flex: 0 0 100%
+    }
+
+    .job-application-footer button {
+
+        font-size: 18px;
+    }
+    
+
+}
